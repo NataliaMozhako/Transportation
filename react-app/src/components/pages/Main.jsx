@@ -1,6 +1,6 @@
 import React from 'react';
 import MyButton from "../UI/button/MyButton";
-import Service from '../service/Service';
+import Services from './Services';
 import InputS from '../UI/inputS/InputS';
 import MyButtonFour from '../UI/buttonFour/MyButtonFour';
 import InputM from '../UI/inputM/inputM';
@@ -50,12 +50,7 @@ const Main = () => {
 
             <div id="service">
                 <div id="namelabel">УСЛУГИ</div>
-                <div className='servcontainer'>
-                    <Service>ПЕРЕВОЗКА СТАНДАРТНЫХ ГРУЗОВ</Service>
-                    <Service>ПЕРЕВОЗКА С СОБЛЮДЕНИЕМ ТЕМПЕРАТУРНОГО РЕЖИМА</Service>
-                    <Service>ПЕРЕВОЗКА СБОРНЫХ ГРУЗОВ</Service>
-                    <Service>КОНТРАКТНЫЕ ПЕРЕВОЗКИ</Service>
-                </div>
+                <Services/>
             </div>
 
             <div id="price">

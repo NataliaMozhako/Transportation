@@ -213,6 +213,26 @@
     flex-wrap: wrap;
 }
 
+.aboutservice {
+    width: 700px;
+    background: #FFFFFF;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.servicetitle {
+    font-size: 24px;
+    background: transparent;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.aboutserviceinfo {
+    font-size: 20px;
+    font-style: italic;
+    background: transparent;
+}
+
 #price {
     width: 900px;
     display: flex;
@@ -443,6 +463,12 @@
 .feedbackbtn {
     align-self: flex-end;
     background: transparent;
+}
+
+.noFeedbacks {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 15px;
 }
 
 .footer {
