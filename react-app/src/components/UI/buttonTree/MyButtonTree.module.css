@@ -1,0 +1,14 @@
+.myBtnTree {
+    padding: 5px 25px;
+    color: #FFFFFF;
+    text-decoration-line: underline;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.myBtnTree:hover {
+    background: #4682B4;
+}

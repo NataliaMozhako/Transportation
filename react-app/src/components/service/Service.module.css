@@ -1,0 +1,24 @@
+.serv {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 40px;
+    align-items: flex-end;
+    background: #393F47;
+    border: 3px solid #393F47;
+    justify-content: space-between;
+    margin: 0 2% 20px;
+}
+
+.serv:hover {
+    border: 3px solid #4682B4;
+}
+
+.servName {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: transparent;
+    margin-bottom: 40px;
+}

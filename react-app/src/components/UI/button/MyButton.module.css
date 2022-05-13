@@ -1,0 +1,18 @@
+.myBtn {
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    background: transparent;
+    border: 4px solid #4682B4;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    border: 4px solid #FFFFFF;
+    font-weight: 100;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}

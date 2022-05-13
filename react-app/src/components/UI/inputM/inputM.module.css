@@ -1,0 +1,14 @@
+.inputM {
+    padding: 7px 15px;
+    margin: 7px 0;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+.inputM:hover {
+    border: 1px solid #4682B4;
+    box-shadow: #4682B4;
+}
