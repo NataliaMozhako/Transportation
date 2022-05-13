@@ -16,6 +16,17 @@
     width: 100%;
 }
 
+.navbarcontainer {
+    width: 100%;
+    position: fixed;
+    background: #2F343A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 .navbar {
     height: 70px;
     width: 900px;
@@ -23,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     background: transparent;
-
+    
 }
 
 .navbar__links {
@@ -215,9 +226,10 @@
 
 .aboutservice {
     width: 700px;
-    background: #FFFFFF;
+    background: #393F47;
     margin: 20px 40px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .servicetitle {
@@ -368,7 +380,7 @@
     margin-bottom: 50px;
 }
 
-#appform {
+#appform, #callform {
     background: #393F47;
     padding: 40px 190px;
     display: flex;
@@ -376,14 +388,14 @@
     align-items: center;
 }
 
-.appinputgroup {
+.appinputgroup, .callinputgroup {
     background: #393F47;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#appinputone, #appinputtwo {
+#appinputone, #appinputtwo, #callinputone, #callinputtwo {
     width: 47%;
 }
 
