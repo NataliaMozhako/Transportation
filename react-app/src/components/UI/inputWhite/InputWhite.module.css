@@ -1,0 +1,10 @@
+.inputWhite {
+    min-width: 360px;
+    padding: 5px 15px;
+    margin: 5px 15px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: transparent;
+    font-size: 18px;
+    text-align: left;
+}

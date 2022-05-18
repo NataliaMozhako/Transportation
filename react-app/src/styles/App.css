@@ -525,3 +525,89 @@
     color: #2F343A;
     text-align: center;
 }
+
+.adminnavbar {
+    margin-top: 80px;
+    align-items: center;
+    background: #393F47;
+    padding: 10px;
+    border-bottom: 1px solid #4682B4;
+}
+
+.admin__navbar__links {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: transparent;
+}
+
+#anavlink {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    background: transparent;
+    text-decoration: none;
+}
+
+.profilepagecontainer {
+    width: 920px;
+    min-height: calc(100vh - 310px);
+    background: #393F47;
+}
+
+.profilepagecontext {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    background: transparent;
+}
+
+.changerfield {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.changerbtns {
+    background: transparent;
+    min-width: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profileitemhat, .profileitemhatch {
+    width: 880px;
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 10px 0;
+}
+
+.profileitemhatch {
+    background: #4682B4;
+}
+
+.profilebtnoptions {
+    background: transparent;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.profilemorelist {
+    background: #2F343A;
+    border: 2px solid #4682B4;
+    padding: 20px;
+}
+
+.listitemhat {
+    display: flex;
+    justify-content: space-between;
+}
