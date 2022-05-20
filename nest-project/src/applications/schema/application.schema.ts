@@ -20,9 +20,6 @@ export class Application{
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Service' })
   service: Service;
 
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Automobile' })
-  automobile: Automobile;
-
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
   user: User;
 

@@ -8,5 +8,4 @@ export class CreateApplicationDto {
   readonly creationDate: string
   readonly email: string
   readonly serviceId: ObjectId
-  readonly automobileId: ObjectId
 }

@@ -3,7 +3,6 @@ import { ServicesService } from './services.service';
 import { CreateServiceDto } from './dto/create-service.dto';
 import { UpdateServiceDto } from './dto/update-service.dto';
 import { Service } from './schema/service.schema';
-import { UpdateServiceAutomobilesDto } from './dto/update-service-automobiles.dto';
 
 
 @Controller('services')
@@ -34,10 +33,5 @@ export class ServicesController {
   @Put(':id')
   update(@Body() updateServiceDto: UpdateServiceDto, @Param('id') id: string): Promise<Service> {
     return this.servicesService.update(id, updateServiceDto)
-  }
-
-  @Put('/automobile/:id')
-  updateServiceAutomobiles(@Param('id') id: string, @Body() serviceautoDto: UpdateServiceAutomobilesDto) {
-    return this.servicesService.updateServiceAutomobiles(id, serviceautoDto)
   }
 }
