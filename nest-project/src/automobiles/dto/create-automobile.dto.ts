@@ -8,6 +8,6 @@ export class CreateAutomobileDto{
     readonly length: number
     readonly tonnage: number
     readonly volume: number
-    readonly serviceId: ObjectId[]
+    readonly serviceId: ObjectId
 }
   

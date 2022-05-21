@@ -33,7 +33,7 @@ export class UsersService {
   async create(userDto: CreateUserDto, profileDto: CreateProfileDto): Promise<User> {
     const newUser = new this.userModel(userDto)
     const newProfile = await this.profileService.create(profileDto)
-    const role = await this.roleService.getRoleByTitle("Registered User")
+    const role = await this.roleService.getRoleByTitle("RegisteredUser")
     newUser.profile = newProfile._id
     newUser.role = role._id
     role.user.push(newUser._id)

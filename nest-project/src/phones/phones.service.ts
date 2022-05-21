@@ -38,7 +38,7 @@ export class PhonesService {
         company.phone.splice(indexCompany, 1)
       }
       company.save()
-        return this.phoneModel.findByIdAndRemove(id)
+      return this.phoneModel.findByIdAndRemove(id)
     }
     
     async update(id: string, phoneDto: UpdatePhoneDto): Promise<Phone> {
