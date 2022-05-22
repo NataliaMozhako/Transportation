@@ -1,5 +1,4 @@
 import { Body, Controller, Delete, Get, Param, Post, UseGuards, UsePipes } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { ValidationPipe } from 'src/pipes/validation.pipe';
 import { FeedbacksService } from './feedbacks.service';
 import { CreateFeedbackDto } from './dto/create-feedback.dto';
@@ -20,7 +19,6 @@ export class FeedbacksController {
     return this.feedbacksService.getById(id)
   }
 
-  // @UseGuards(JwtAuthGuard)
   @UsePipes(ValidationPipe)
   @Post()
   create(@Body() createCreateDto: CreateFeedbackDto): Promise<Feedback> {

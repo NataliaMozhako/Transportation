@@ -4,7 +4,6 @@ import { Document } from 'mongoose';
 import { Profile } from 'src/profiles/schema/profile.schema';
 import { Role } from 'src/roles/schema/role.schema';
 import { Application } from 'src/applications/schema/application.schema';
-import { Feedback } from 'src/feedbacks/schema/feedback.schema';
 
 export type UserDocument = User & Document;
 
@@ -37,8 +36,6 @@ export class User{
   @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Application' }] })
   application: Application[];
 
-  /*@Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Feedback' }] })
-  feedback: Feedback[];*/
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

@@ -2,7 +2,6 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import * as mongoose from 'mongoose';
 import { Service } from 'src/services/schema/service.schema';
-import { Automobile } from 'src/automobiles/schema/automobile.schema';
 import { Status } from 'src/statuses/schema/status.schema';
 import { User } from 'src/users/schema/user.schema';
 

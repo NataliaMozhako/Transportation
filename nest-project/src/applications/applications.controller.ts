@@ -1,5 +1,4 @@
 import { Body, Controller, Delete, Get, Param, Post, UseGuards, UsePipes, Put } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { ValidationPipe } from 'src/pipes/validation.pipe';
 import { ApplicationsService } from './applications.service';
 import { CreateApplicationDto } from './dto/create-application.dto';
@@ -21,7 +20,6 @@ export class ApplicationsController {
     return this.applicationsService.getById(id)
   }
 
-  // @UseGuards(JwtAuthGuard)
   @UsePipes(ValidationPipe)
   @Post()
   create(@Body() createCreateDto: CreateApplicationDto): Promise<Application> {

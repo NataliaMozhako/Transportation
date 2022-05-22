@@ -17,11 +17,6 @@ export class ProfilesController {
     return this.profilesService.getById(id)
   }
 
-  // @Post()
-  // create(@Body() createUserDto: CreateProfileDto): Promise<Profile> {
-  //   return this.profilesService.create(createUserDto)
-  // }
-
   @Delete(':id')
   remove(@Param('id') id: string): Promise<Profile> {
     return this.profilesService.remove(id)

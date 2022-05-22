@@ -1,5 +1,4 @@
 import { Body, Controller, Delete, Get, Param, Post, UseGuards, UsePipes } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { ValidationPipe } from 'src/pipes/validation.pipe';
 import { StatusesService } from './statuses.service';
 import { CreateStatusDto } from './dto/create-status.dto';
@@ -20,7 +19,6 @@ export class StatusesController {
     return this.statusesService.getById(id)
   }
 
-  // @UseGuards(JwtAuthGuard)
   @UsePipes(ValidationPipe)
   @Post()
   create(@Body() createCreateDto: CreateStatusDto): Promise<Status> {
