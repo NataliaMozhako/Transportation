@@ -8,10 +8,9 @@ const Navbar = () => {
         <div className='navbarcontainer'>
             <div className="navbar">
                 <div className="navbar__links">
-                    <Link id="navlink" to="/mainpage#about">О КОМПАНИИ</Link>
-                    <Link id="navlink" to="/mainpage#service">УСЛУГИ</Link>
-                    <Link id="navlink" to="/mainpage#feedback">ОТЗЫВЫ</Link>
-                    <Link id="navlink" to="/mainpage#contacts">КОНТАКТЫ</Link>
+                    <Link className="navlink" to="/aboutPage">О КОМПАНИИ</Link>
+                    <Link className="navlink" to="/servicesPage">УСЛУГИ</Link>
+                    <Link className="navlink" to="/feedbacksPage">ОТЗЫВЫ</Link>
                 </div>
 
                 <div>

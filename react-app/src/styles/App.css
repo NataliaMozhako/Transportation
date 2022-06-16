@@ -42,18 +42,18 @@
     justify-content: space-between;
 }
 
-#navlink {
+.navlink {
     margin-right: 20px;
     color: #FFFFFF;
     font-size: 20px;
     text-decoration: none;
 }
 
-#navlink:visited {
+.navlink:visited {
     color: #FFFFFF;
 }
 
-#navlink:hover {
+.navlink:hover {
     color: #4682B4;
 }
 
